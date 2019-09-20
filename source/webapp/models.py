@@ -14,7 +14,7 @@ class Product(models.Model):
     description = models.TextField(max_length=2000, null=True, blank=True, verbose_name='Description')
     category = models.CharField(max_length=30, null=False, blank=False, verbose_name='Category', default=CATEGORY_CHOICES[0][0],
                                 choices=CATEGORY_CHOICES)
-    count = models.FloatField(verbose_name='Count')
+    count = models.IntegerField(verbose_name='Count')
     price = models.DecimalField(max_digits=7, decimal_places=2, verbose_name='Price')
 
 
