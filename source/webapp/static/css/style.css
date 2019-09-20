@@ -65,3 +65,18 @@ body{
     font-weight: bold;
     margin-top: 10px;
 }
+.jumbotron h1{
+    font-size: 50px;
+    color: red;
+    /*text-align: center;*/
+    font-weight: bold;
+}
+.jumbotron .lead{
+    font-size: 35px;
+    color: #f8381f;
+
+}
+.jumbotron .info {
+    font-size: 25px;
+    text-decoration-line: underline;
+}

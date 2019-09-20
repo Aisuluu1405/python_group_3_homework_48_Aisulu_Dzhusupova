@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{%  block content %}
+    <div class="jumbotron">
+        <div class="jumbotron">
+            <h1>{{ product.name }}</h1>
+            <p class="lead">{{ product.description }}</p>
+            <hr class="my-4">
+            <p class="info">Price: {{ product.price }} $ </p>
+            <p class="info">Count: {{ product.count }}</p>
+        </div>
+    </div>
+{#        <p><a href="{% url 'edit_plan' plan.pk %}" class="btn btn-primary" >Edit</a></p>#}
+{#        <p><a href="{% url 'delete_plan' plan.pk %}" class="btn btn-primary">Delete</a></p>#}
+{% endblock %}
+
+
+
+
