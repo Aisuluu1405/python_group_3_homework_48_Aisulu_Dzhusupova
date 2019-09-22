@@ -37,3 +37,28 @@ def product_add_view(request, *args, **kwargs):
             return render(request, 'product_add.html', context={'form': form})
 
 
+def product_edit_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == 'GET':
+        form = ProductForm(data={
+            'name': product.name,
+            'description': product.description,
+            'category': product.category,
+            'count': product.count,
+            'price':product.price
+        })
+        return render(request, 'product_edit.html', context={'form': form, 'product': product})
+    elif request.method == 'POST':
+        form = ProductForm(data=request.POST)
+        if form.is_valid():
+            data = form.cleaned_data
+            product.name = data['name']
+            product.description = data['description']
+            product.category = data['category']
+            product.count = data['count']
+            product.price = data['price']
+            product.save()
+            return redirect('product_path', pk=product.pk)
+        else:
+            return render(request, 'product_edit.html', context={'form': form, 'product': product})
+
