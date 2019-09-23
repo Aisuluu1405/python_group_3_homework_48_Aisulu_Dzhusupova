@@ -10,5 +10,3 @@ class ProductForm(forms.Form):
     count = forms.IntegerField(min_value=0, required=True, label='Count')
     price = forms.DecimalField(max_digits=7, decimal_places=2, required=True, label='Price')
 
-
-

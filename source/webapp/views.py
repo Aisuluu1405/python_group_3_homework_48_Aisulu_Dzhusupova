@@ -70,4 +70,3 @@ def product_delete_view(request, pk):
     elif request.method == 'POST':
         product.delete()
     return redirect('index')
-
