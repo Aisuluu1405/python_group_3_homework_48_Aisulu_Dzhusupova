@@ -1,0 +1,152 @@
+[
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Skirt",
+    "description": "Skirt midi color red",
+    "category": "clothes",
+    "count": 10,
+    "price": "1500.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "T-Shirt",
+    "description": "T-shirt with logo \"NY. Sise-XS, S, M, L. Winter-2020.",
+    "category": "clothes",
+    "count": 20,
+    "price": "1200.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "T-shirt",
+    "description": "T-shirt lether",
+    "category": "clothes",
+    "count": 15,
+    "price": "2300.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "Boots",
+    "description": "White boots with logo",
+    "category": "shoes",
+    "count": 5,
+    "price": "4600.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "Bags",
+    "description": "Bag red, leather",
+    "category": "accessories",
+    "count": 3,
+    "price": "8000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "Boots",
+    "description": "Winter boots , color-black",
+    "category": "Shoes",
+    "count": 0,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 7,
+  "fields": {
+    "name": "Coat",
+    "description": "Coat color-blue, winter-2020, size-M, L. style-oversize",
+    "category": "clothes",
+    "count": 3,
+    "price": "1000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 8,
+  "fields": {
+    "name": "\u0411\u0440\u044e\u043a\u0438",
+    "description": "\u0411\u0440\u044e\u043a\u0438 \u0417\u0430\u0440\u0430 \u043f\u0440\u044f\u043c\u044b\u0435 , \u043a\u043e\u0436\u0430\u043d\u043d\u044b\u0435, \u0446\u0432\u0435\u0442-\u0445\u0430\u043a\u0438, \u0440\u0430\u0437\u043c\u0435\u0440\u044b- S, M, L. \u041a\u0430\u0447\u0435\u0441\u0442\u0432\u043e \u0445\u043e\u0440\u043e\u0448\u0435\u0435, \u0438\u0434\u0443\u0442 \u0440\u0430\u0437\u043c\u0435\u0440 \u0432 \u0440\u0430\u0437\u043c\u0435\u0440",
+    "category": "clothes",
+    "count": 0,
+    "price": "2500.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 9,
+  "fields": {
+    "name": "Woman dress",
+    "description": "Dress with flower print, size- S, M. Midi. 100% cotton.",
+    "category": "clothes",
+    "count": 2,
+    "price": "120.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 10,
+  "fields": {
+    "name": "Bag",
+    "description": "Animal print mini tote bag, leather. Color-camel. Size:  Height x Length x Width 16 x 21 x 7 cm.",
+    "category": "accessories",
+    "count": 4,
+    "price": "100.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 11,
+  "fields": {
+    "name": "Ultimate MM02",
+    "description": "Matte metallic bronze lipstick. Featuring a hightly pigmented formula with a comfortable and lightweight finish.",
+    "category": "beauty",
+    "count": 2,
+    "price": "30.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 12,
+  "fields": {
+    "name": "Boot",
+    "description": "White boot",
+    "category": "shoes",
+    "count": 0,
+    "price": "149.00"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$oToI2dEf4fKY$gcHbx23UuA668feoPHdybPu50c3EqSGCiBzSBtZ69M8=",
+    "last_login": "2019-09-23T11:46:55.423Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-20T04:58:51.849Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
