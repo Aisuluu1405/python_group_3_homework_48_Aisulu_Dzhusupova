@@ -3,17 +3,21 @@
 {% block title %}{{ product.name }}{% endblock %}
 
 {%  block content %}
-    <div class="jumbotron">
+    <div class="jumbotron_main">
         <div class="jumbotron">
-            <h1>{{ product.name }}</h1>
+            <h2>{{ product.name }}</h2>
+            <h3>{{ product.get_category_display }}</h3>
             <p class="lead">{{ product.description }}</p>
             <hr class="my-4">
-            <p class="info">Price: {{ product.price }} $ </p>
-            <p class="info">Count: {{ product.count }}</p>
+            <p class="info"><b>Price: </b> {{ product.price }} $ </p>
+            <p class="info"><b>Count: </b> {{ product.count }} pcs.</p>
+            <p>
+                <a href="{% url 'product_edit' product.pk %}" class="btn btn-secondary" >Edit</a>
+                <a href="{% url 'product_delete' product.pk %}" class="btn btn-secondary">Delete</a>
+        </p>
         </div>
     </div>
-        <p><a href="{% url 'product_edit' product.pk %}" class="btn btn-primary" >Edit</a></p>
-{#        <p><a href="{% url 'delete_plan' plan.pk %}" class="btn btn-primary">Delete</a></p>#}
+
 {% endblock %}
 
 

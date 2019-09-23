@@ -12,22 +12,11 @@
 </head>
 <body>
 <nav class="navbar">
-    <div class="container">
-        <ul class="nav nav-tabs">
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'product_add' %}">Add</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Clothes</a>
-                        <a class="dropdown-item" href="#">Shoes</a>
-                        <a class="dropdown-item" href="#">Accessories</a>
-                        <a class="dropdown-item" href="#">Beauty</a>
-                             <div class="dropdown-divider"></div>
-                             <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-            </li>
-            <li><a href="/admin/">Admin</a></li>
+    <div class="nav-menu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link active" href="{% url 'index' %}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'product_add' %}">Add</a></li>
+            <li class="nav-item"><a class="nav-link" href="/admin/">Admin</a></li>
             {% block menu %} {% endblock %}
         </ul>
     </div>

@@ -1,12 +1,12 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: rgba(77, 219, 255, 0.83);
+    background-color: rgba(176, 146, 147, 0.32);
     color: #222222;
     margin-top: 60px;
 }
 .navbar {
     display: block;
-    background: #4ddbff;
+    background: rgba(4, 7, 3, 0.44);
     position: fixed;
     top: 0;
     right: 0;
@@ -15,29 +15,30 @@ body{
     box-sizing: border-box;
     padding: 7px 30px;
 }
-.nav-tabs {
+.nav{
     font-size: 14px;
     font-weight: bold;
     line-height: 1;
     padding: 0;
     margin: 0;
-    display: inline-block;
     color: #fffee8;
+    display: flex;
 }
-.nav-tabs li {
+
+.nav-item {
     display: inline-block;
-    font-size: 30px;
-    margin: 20px 60px;
+    margin: 20px 20px;
 }
-.nav-tabs a {
+.nav-link {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     padding: 5px 20px;
+    font-size: 25px;
 }
-.container {
+.nav-menu {
     max-width: 900px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 .card{
@@ -49,7 +50,7 @@ body{
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #f8381f;
+    color: rgba(39, 48, 18, 0.72);
 }
 .card-text{
     font-size: 20px;
@@ -63,20 +64,68 @@ body{
     border-radius: 5px;
     width: 110px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.jumbotron h1{
-    font-size: 50px;
-    color: red;
-    /*text-align: center;*/
+.jumbotron{
+
+    margin-top:30px;
+    background-color: rgba(51, 35, 62, 0.24);
+    color: midnightblue;
+}
+.jumbotron_main{
+    padding: 120px 70px 0 70px;
+}
+.lead{
+    font-size: 28px;
+}
+h2{
+    font-size: 45px;
     font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration-line: underline;
 }
-.jumbotron .lead{
+h3{
     font-size: 35px;
-    color: #f8381f;
+    margin: 20px 0;
 
 }
-.jumbotron .info {
+.info{
     font-size: 25px;
-    text-decoration-line: underline;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 95px;
+}
+.required{
+    font-weight: bold;
+    color: #bf1f6d;
+}
+.form-error {
+    color: red;
+    font-size: 18px;
+    margin: 5px 0 0 0
+}
+
+.field-error {
+    border: solid 1px red;
+    box-shadow: red 0 0 3px;
+}
+.form-control {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: block;
+    width: 65%;
+    margin: auto;
+    border: solid 1px lightgray;
+    box-sizing: border-box;
+    background: white;
+}
+.fields{
+    font-size: 20px;
+    margin-left:70px;
+
 }

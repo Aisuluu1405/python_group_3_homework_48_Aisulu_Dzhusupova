@@ -8,9 +8,9 @@
             <div class="card">
                 <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text text-info">{{ product.get_category_display }}</p>
-                <p class="card-text text-info">{{ product.price }} $ </p>
-                    <p><a href="{% url 'product_path' product.pk %}" class="btn btn-primary">Description</a></p>
+                <p class="card-text text-dark">{{ product.get_category_display }}</p>
+                <p class="card-text text-dark">{{ product.price }} $ </p>
+                    <p><a href="{% url 'product_path' product.pk %}" class="btn btn-secondary">Description</a></p>
                 </div>
             </div>
          </div>
